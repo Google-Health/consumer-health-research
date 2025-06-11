@@ -1,4 +1,7 @@
-# Personal Health Large Language Model (PH-LLM)
+# Consumer-Health-Research
 
-This repository contains code and data for the manuscript
-"[A Personal Health Large Language Model for Sleep and Fitness Coaching](https://arxiv.org/abs/2406.06474)".
+[![Unittests](https://github.com/google-health/consumer_health_research/actions/workflows/pytest_and_autopublish.yml/badge.svg)](https://github.com/google-health/consumer_health_research/actions/workflows/pytest_and_autopublish.yml)
+[![PyPI version](https://badge.fury.io/py/consumer_health_research.svg)](https://badge.fury.io/py/consumer_health_research)
+Consumer Health Research Team's mission is to help people understand and improve their health.
+
+*This is not an officially supported Google product.*
