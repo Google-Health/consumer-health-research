@@ -7,6 +7,8 @@ manuscript "[Insulin Resistance Prediction From Wearables and Routine Blood Biom
 
 Insulin resistance, a precursor to type 2 diabetes, is characterized by impaired insulin action in tissues. Current methods for measuring insulin resistance, while effective, are expensive, inaccessible, not widely available and hinder opportunities for early intervention. In this study, we remotely recruited the largest dataset to date across the US to study insulin resistance (N=1,165 participants, with median BMI=28 kg/m2, age=45 years, HbA1c=5.4%), incorporating wearable device time series data and blood biomarkers, including the ground-truth measure of insulin resistance, homeostatic model assessment for insulin resistance (HOMA-IR). We developed deep neural network models to predict insulin resistance based on readily available digital and blood biomarkers. Our results show that our models can predict insulin resistance by combining both wearable data and readily available blood biomarkers better than either of the two data sources separately (R2=0.5, auROC=0.80, Sensitivity=76%, and specificity 84%). The model showed 93% sensitivity and 95% adjusted specificity in obese and sedentary participants, a subpopulation most vulnerable to developing type 2 diabetes and who could benefit most from early intervention. Rigorous evaluation of model performance, including interpretability, and robustness, facilitates generalizability across larger cohorts, which is demonstrated by reproducing the prediction performance on an independent validation cohort (N=72 participants). Additionally, we demonstrated how the predicted insulin resistance can be integrated into a large language model agent to help understand and contextualize HOMA-IR values, facilitating interpretation and safe personalized recommendations. This work offers the potential for early detection of people at risk of type 2 diabetes and thereby facilitate earlier implementation of preventative strategies.
 
+![Alt text](figures/41586_2026_10179_Fig1.webp)
+
 
 ## Datasets
 
@@ -85,14 +87,16 @@ If running the provided code using other environments, please use the following 
 ## Citing this paper
 
 ```bib
-@misc{metwally2025insulinresistancepredictionwearables,
+@article{metwally2026insulin,
       title={Insulin Resistance Prediction From Wearables and Routine Blood Biomarkers}, 
       author={Ahmed A. Metwally and A. Ali Heydari and Daniel McDuff and Alexandru Solot and Zeinab Esmaeilpour and Anthony Z Faranesh and Menglian Zhou and David B. Savage and Conor Heneghan and Shwetak Patel and Cathy Speed and Javier L. Prieto},
-      year={2025},
-      eprint={2505.03784},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2505.03784}, 
+      journal={Nature},
+      volume={652},
+      number={8109},
+      pages={451--461},
+      year={2026},
+      publisher={Nature Publishing Group}
+      url={https://doi.org/10.1038/s41586-026-10179-2}, 
 }
 ```
 
