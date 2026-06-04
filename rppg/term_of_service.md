@@ -2,7 +2,7 @@
 
 To access the Google Heart Rate Measurement Study Dataset (the **“HR Dataset”)**, you must accept this Google Heart Rate Measurement Study Dataset Terms of Service (the “**HR Dataset Terms**”). Please read this document carefully.
 
-These HR Dataset Terms incorporate by reference the [Google Terms of Services](https://policies.google.com/terms?sjid=6570939750558811-NA) (the  “**Terms of Service**”) and any other additional policies, instructions, restrictions, or legal notices that Google provides you with in connection with the HR Dataset (“**Policies**”). Together, these HR Dataset Terms, the Terms of Service, and the Policies are known as the “**Agreement**.” This Agreement governs your use of the HR Dataset and is entered into by you and Google.
+These HR Dataset Terms incorporate by reference the [Google Terms of Service](https://policies.google.com/terms?sjid=6570939750558811-NA) (the  “**Terms of Service**”) and any other additional policies, instructions, restrictions, or legal notices that Google provides you with in connection with the HR Dataset (“**Policies**”). Together, these HR Dataset Terms, the Terms of Service, and the Policies are known as the “**Agreement**.” This Agreement governs your use of the HR Dataset and is entered into by you and Google.
 
 If you’re using the HR Dataset on behalf of an organization, you enter into this Agreement on behalf of that organization, and represent and warrant that you have the authority to do so. You confirm that your use of the HR Dataset will not: (A) violate any applicable ethics/gifts rules; or (B) negatively impact Google’s current or future ability to do business with a government entity.
 

@@ -8,9 +8,9 @@ The HR Dataset consists of data collected from consented research participants d
 *   **Facial Video Recordings**
 *   **Heart Rate**
 
-Facial video recordings captured during laboratory studies include video of study participants' full faces.  Facial video recordings captured under "free-living" conditions consist of de-identified patches from study participants' forehead regions (10x5 pixel patches) to preserve participant privacy.  The dataset additionally includes a heart rate estimation model ("PHRM-mini") trained on the dataset.  Please see the publication for more details.
+Facial video recordings captured during laboratory studies include video of study participants' full faces.  Facial video recordings captured under "free-living" conditions consist of de-identified patches from study participants' forehead regions (downsampled to 10x5 pixel patches) to preserve participant privacy.  The dataset additionally includes a heart rate estimation model ("PHRM-mini") trained on the dataset.  Please see the publication for more details.
 
-You must not (i) share the HR Dataset with any third-parties, (ii) use it for any purpose other than non-commercial, non-clinical research purposes, (iii) re-identify or attempt to reidentify any individuals within the HR Dataset, or (iv) include any identifiable information (including face video recordings) in any related publications or presentations. 
+You must not (i) share the HR Dataset with any third-parties, (ii) use it for any purpose other than non-commercial, non-clinical research purposes, (iii) re-identify or attempt to re-identify any individuals within the HR Dataset, or (iv) include any identifiable information (including face video recordings) in any related publications or presentations. 
 
 ---
 
