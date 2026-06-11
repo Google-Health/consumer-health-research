@@ -1,0 +1,2 @@
+strategy:
+  name: "fhir2text"

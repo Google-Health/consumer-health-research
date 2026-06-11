@@ -1,0 +1,4 @@
+dataset:
+  name: fhirpathqa
+  qa_path: data/fhirpathqa/qa.pickle
+  fhir_path: data/fhirpathqa/fhir_bundles.pq
