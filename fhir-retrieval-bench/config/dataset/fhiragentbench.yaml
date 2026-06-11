@@ -1,0 +1,4 @@
+dataset:
+  name: fhiragentbench
+  qa_path: data/fhiragentbench/qa.csv
+  fhir_path: data/fhiragentbench/fhir_bundles.pq

@@ -1,0 +1,17 @@
+models:
+  answer:
+    model: "claude-sonnet-4-6"
+    backend: "vertex"
+    temperature: 0.6
+    max_output_tokens: 8192
+    thinking_config: null
+  judge:
+    model: "claude-sonnet-4-6"
+    backend: "vertex"
+    temperature: 0.0
+    max_output_tokens: 8192
+    thinking_config: null
+  embedding:
+    model: "gemini-embedding-001"
+    backend: "public"
+

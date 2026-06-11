@@ -1,0 +1,87 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "sample-001",
+        "name": [{"given": ["Alex"], "family": "Sample"}],
+        "gender": "female",
+        "birthDate": "1965-04-12"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "cond-hyperlipidemia",
+        "subject": {"reference": "Patient/sample-001"},
+        "code": {"text": "Hyperlipidemia"},
+        "clinicalStatus": {"coding": [{"code": "active"}]},
+        "onsetDateTime": "2023-02-10"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "enc-2025-03",
+        "subject": {"reference": "Patient/sample-001"},
+        "class": {"display": "Outpatient"},
+        "serviceType": {"text": "Cardiology"},
+        "period": {"start": "2025-03-15T09:00:00Z", "end": "2025-03-15T09:45:00Z"}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "medreq-statin",
+        "status": "active",
+        "intent": "order",
+        "subject": {"reference": "Patient/sample-001"},
+        "encounter": {"reference": "Encounter/enc-2025-03"},
+        "medicationCodeableConcept": {"text": "Atorvastatin 20 mg oral tablet"},
+        "authoredOn": "2025-03-15",
+        "requester": {"display": "Dr. Patel"}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-ldl-2025-04",
+        "status": "final",
+        "subject": {"reference": "Patient/sample-001"},
+        "category": [{"coding": [{"code": "laboratory"}]}],
+        "code": {"text": "LDL Cholesterol"},
+        "valueQuantity": {"value": 98, "unit": "mg/dL"},
+        "effectiveDateTime": "2025-04-20T08:30:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-ldl-2023-02",
+        "status": "final",
+        "subject": {"reference": "Patient/sample-001"},
+        "category": [{"coding": [{"code": "laboratory"}]}],
+        "code": {"text": "LDL Cholesterol"},
+        "valueQuantity": {"value": 161, "unit": "mg/dL"},
+        "effectiveDateTime": "2023-02-09T08:15:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-bp-2025-04",
+        "status": "final",
+        "subject": {"reference": "Patient/sample-001"},
+        "category": [{"coding": [{"code": "vital-signs"}]}],
+        "code": {"text": "Blood Pressure"},
+        "component": [
+          {"code": {"text": "Systolic"}, "valueQuantity": {"value": 128, "unit": "mmHg"}},
+          {"code": {"text": "Diastolic"}, "valueQuantity": {"value": 82, "unit": "mmHg"}}
+        ],
+        "effectiveDateTime": "2025-04-20T08:25:00Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+strategy:
+  name: "ns_agent"
+  max_linearization_tokens: 4000
+
+  # ==========================================
+  # Ablation Strategy Configs
+  # ==========================================
+  # Choice of linearization algorithm:
+  # - 'greedy' (default saliency packed)
+  # - 'chronological' (sequential timeline packed)
+  linearization_strategy: "greedy"
+
+  # Selectively disable agent functions:
+  enabled_tools:
+    - "inspect_node"
+    - "search_graph"
+    - "follow_links"
+    - "filter_graph_by_time"
