@@ -1,7 +1,7 @@
 # Personal Health Agent (PHA) Framework
 
 <p align="center">
-:fire: Please remember to :star: this repo if you find it useful and <a href="https://github.com/yahskapar/personal-health-agent#scroll-citation">cite</a> our work if you end up using it in your work! :fire:
+:fire: Please remember to :star: this repo if you find it useful and <a href="https://github.com/google-health/consumer-health-research/tree/main/personal_health_agent#scroll-citation">cite</a> our work if you end up using it in your work! :fire:
 </p>
 <p align="center">
 :fire: If you have any questions or concerns, please create an issue :memo:! :fire:
@@ -222,7 +222,7 @@ If you find our [paper](https://www.arxiv.org/abs/2508.20148) or this code relea
 
 ## :handshake: Contributing
 
-For details on contributing to this repository, please see [CONTRIBUTING.md](https://github.com/Google-Health/consumer-health-research/blob/main/personal-health-agent/CONTRIBUTING.md).
+For details on contributing to this repository, please see [CONTRIBUTING.md](https://github.com/Google-Health/consumer-health-research/blob/main/personal_health_agent/CONTRIBUTING.md).
 
 ## :balance_scale: License
 

@@ -16,8 +16,8 @@ setup(
       long_description=readme,
       long_description_content_type="text/markdown",
       license="CC NC-BY 4.0",
-      url="https://github.com/yahskapar/personal-health-agent",
-      download_url="https://github.com/yahskapar/personal-health-agent",
+      url="https://github.com/google-health/consumer-health-research/tree/main/personal_health_agent",
+      download_url="https://github.com/google-health/consumer-health-research/tree/main/personal_health_agent",
       packages=find_packages(),
       classifiers=[
                    "Development Status :: 4 - Beta",

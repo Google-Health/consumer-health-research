@@ -201,7 +201,7 @@ function App() {
         <h2>⚠️ Connection Error</h2>
         <p>{error}</p>
         <p className="hint">Make sure the API server is running:</p>
-        <code>cd personal-health-agent-main && uvicorn api.main:app --reload</code>
+        <code>cd personal_health_agent && uvicorn api.main:app --reload</code>
         <button onClick={() => { setError(null); fetchConfig(); }}>
           Retry
         </button>
