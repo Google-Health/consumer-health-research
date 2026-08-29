@@ -1,0 +1,3 @@
+Sample user health profile with synthetic Fitbit-style data.
+Contains ~6 months of daily health summaries and activity records.
+Demographics: 35-year-old individual with moderate activity levels.
