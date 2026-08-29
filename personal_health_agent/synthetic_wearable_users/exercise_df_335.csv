@@ -1,0 +1,2 @@
+pseudo_id2,date,duration,activityName,startTime,endTime,averageHeartRate,elevationGain,distance,calories,steps,activeZoneMinutes,speed
+335,2023-10-03,31.57,Treadmill,2023-10-03 19:52:00,2023-10-03 20:25:00,111,30.48,22062.2,251,3039,1,698.91

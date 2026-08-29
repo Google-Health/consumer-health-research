@@ -1,0 +1,3 @@
+pseudo_id2,date,duration,activityName,startTime,endTime,averageHeartRate,elevationGain,distance,calories,steps,activeZoneMinutes,speed
+457,2023-10-01,44.25,Outdoor Bike,2023-10-01 11:08:00,2023-10-01 11:52:00,121,1371.6,0.0,389,0,74,0.0
+457,2023-10-19,35.0,Bike,2023-10-19 15:03:00,2023-10-19 15:38:00,108,0.0,574.0,347,0,28,16.4

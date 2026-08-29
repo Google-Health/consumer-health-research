@@ -1,0 +1,12 @@
+user_id,Day of the week,date,duration,activityName,startTime,endTime,averageHeartRate,elevationGain,distance,calories,steps,activeZoneMinutes,speed
+PHIA_FU31203,Sunday,Day 1,74.82,N/A,18:10,19:25,77,N/A,N/A,200,422,1,N/A
+PHIA_FU31203,Monday,Day 2,68.97,N/A,18:44,19:53,81,N/A,N/A,227,402,13,N/A
+PHIA_FU31203,Thursday,Day 3,72.18,N/A,16:46,17:58,78,N/A,N/A,199,420,1,N/A
+PHIA_FU31203,Saturday,Day 4,170.92,N/A,15:11,18:02,74,N/A,N/A,486,1925,0,N/A
+PHIA_FU31203,Sunday,Day 5,78.45,N/A,16:13,17:31,80,N/A,N/A,232,865,8,N/A
+PHIA_FU31203,Monday,Day 6,65.75,N/A,14:55,16:01,83,N/A,N/A,173,338,0,N/A
+PHIA_FU31203,Thursday,Day 7,126.58,N/A,16:53,19:00,74,N/A,N/A,344,1147,0,N/A
+PHIA_FU31203,Friday,Day 8,67.15,N/A,19:24,20:31,77,N/A,N/A,174,507,0,N/A
+PHIA_FU31203,Monday,Day 9,73.05,N/A,16:58,18:11,74,N/A,N/A,175,412,0,N/A
+PHIA_FU31203,Thursday,Day 10,73.38,N/A,14:43,15:56,83,N/A,N/A,277,371,15,N/A
+PHIA_FU31203,Sunday,Day 11,84.03,N/A,18:09,19:33,79,N/A,N/A,243,884,0,N/A
