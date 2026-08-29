@@ -1,0 +1,9 @@
+user_id,weight_kg,height_cm,age_group,gender,Day of the week,date,resting_heart_rate,heart_rate_variability,fatburn_active_zone_minutes,cardio_active_zone_minutes,peak_active_zone_minutes,active_zone_minutes,steps,rem_sleep_minutes,deep_sleep_minutes,awake_minutes,light_sleep_minutes,sleep_minutes,bed_time,wake_up_time
+PHIA_FU68759,65,159,[65-69],N/A,Wednesday,Day 1,61,16.89,21,6,N/A,33,5046,82,99,115,248,429,23:15,6:24
+PHIA_FU68759,65,159,[65-69],N/A,Friday,Day 2,61,19.98,17,1,N/A,19,7651,55,38,87,372,465,22:47,6:32
+PHIA_FU68759,65,159,[65-69],N/A,Monday,Day 3,64,16.54,3,0,N/A,3,7324,94,45,57,229,368,21:25,3:33
+PHIA_FU68759,65,159,[65-69],N/A,Tuesday,Day 4,64,15.98,29,0,N/A,29,7286,84,102,75,309,495,22:39,6:54
+PHIA_FU68759,65,159,[65-69],N/A,Monday,Day 5,63,17.48,20,0,N/A,20,8368,115,62,75,320,497,21:30,5:47
+PHIA_FU68759,65,159,[65-69],N/A,Tuesday,Day 6,64,13.6,19,6,N/A,31,9632,79,57,80,334,470,21:14,5:04
+PHIA_FU68759,65,159,[65-69],N/A,Thursday,Day 7,64,13.57,25,0,N/A,25,8066,77,40,77,317,434,23:32,6:46
+PHIA_FU68759,65,159,[65-69],N/A,Tuesday,Day 8,61,14.8,41,13,N/A,67,10184,124,83,85,311,518,21:05,5:43

@@ -1,0 +1,5 @@
+user_id,Day of the week,date,duration,activityName,startTime,endTime,averageHeartRate,elevationGain,distance,calories,steps,activeZoneMinutes,speed
+PHIA_FU68759,Wednesday,Day 1,10.25,N/A,14:32,14:42,115,N/A,N/A,58,964,16,N/A
+PHIA_FU68759,Monday,Day 2,26.45,N/A,21:09,21:36,0,N/A,N/A,62,872,0,N/A
+PHIA_FU68759,Tuesday,Day 3,34.98,N/A,20:52,21:27,0,N/A,N/A,54,533,0,N/A
+PHIA_FU68759,Thursday,Day 4,27.3,N/A,22:51,23:18,84,N/A,N/A,34,260,0,N/A

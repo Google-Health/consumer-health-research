@@ -1,0 +1,2 @@
+pseudo_id2,date,duration,activityName,startTime,endTime,averageHeartRate,elevationGain,distance,calories,steps,activeZoneMinutes,speed
+310,2023-10-02,20.43,Run,2023-10-02 09:38:00,2023-10-02 09:58:00,132,30.48,0.0,217,2818,37,0.0

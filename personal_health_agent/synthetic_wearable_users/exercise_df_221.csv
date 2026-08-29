@@ -1,0 +1,5 @@
+pseudo_id2,date,duration,activityName,startTime,endTime,averageHeartRate,elevationGain,distance,calories,steps,activeZoneMinutes,speed
+221,2023-10-13,10.0,Elliptical,2023-10-13 14:36:00,2023-10-13 14:46:00,93,121.92,0.0,46,614,1,0.0
+221,2023-10-15,10.0,Elliptical,2023-10-15 06:50:00,2023-10-15 07:00:00,86,0.0,0.0,46,659,0,0.0
+221,2023-10-17,32.43,Outdoor Bike,2023-10-17 16:37:00,2023-10-17 17:09:00,87,0.0,0.0,147,0,6,0.0
+221,2023-10-24,20.52,Aerobic Workout,2023-10-24 11:06:00,2023-10-24 11:26:00,111,0.0,0.0,111,1991,19,0.0
