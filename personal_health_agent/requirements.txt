@@ -1,9 +1,22 @@
-pandas==2.1
-numpy==1.26
-matplotlib
-scipy==1.13.0
-seaborn==0.13.2
-google-generativeai
+# Core Scientific Stack
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.8.0
+scipy>=1.10.0
+seaborn>=0.13.0
+
+# LLM & Agents Frameworks
+google-genai
+google-generativeai  # Required by onetwo for PHIA baseline
+tavily-python>=0.3.0
+ddgs>=7.0.0
+# Note: onetwo itself is installed separately via setup.sh with --no-deps
+
+# OpenAI & Anthropic (optional, for multi-provider support)
+openai>=1.0.0
+anthropic>=0.20.0
+
+# Utilities & Serialization
 immutabledict
 pillow
 dataclasses-json
@@ -12,7 +25,20 @@ aenum
 absl-py
 jinja2
 pyyaml
+requests
+python-dotenv>=1.0.0
+tabulate>=0.9.0  # used by pandas df.to_markdown()
+
+# Jupyter & Interactive
 nbformat
-tavily-python
 ipywidgets
 ipykernel
+nest_asyncio
+
+# FastAPI Portal Backend
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0
+
+# Onetwo
+git+https://github.com/google-deepmind/onetwo
