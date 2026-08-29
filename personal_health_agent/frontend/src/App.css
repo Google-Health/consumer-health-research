@@ -1,0 +1,72 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.app-error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-error h2 {
+  color: var(--error);
+}
+
+.app-error .hint {
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.app-error code {
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.app-error button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.app-error button:hover {
+  background: var(--primary-dark);
+}

@@ -1,0 +1,5 @@
+# Ignore all user session logs
+*
+
+# But keep this .gitignore file (so the folder is tracked)
+!.gitignore

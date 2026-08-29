@@ -1,30 +1,39 @@
 #!/bin/bash
 
 conda_setup() {
-    echo "Setting up phia environment using conda..."
+    echo "Setting up pha_framework environment using conda..."
     
-    # Remove existing phia environment if it exists
-    conda env remove -n phia -y || echo "No existing phia environment found"
+    # Remove existing pha_framework environment if it exists
+    conda env remove -n pha_framework -y || echo "No existing pha_framework environment found"
     
-    # Create and activate initial phia environment
-    conda create -n phia python=3.11 pip -y || exit 1
+    # Create and activate initial pha_framework environment with Python 3.12
+    conda create -n pha_framework python=3.12 pip -y || exit 1
+    
+    # Source conda to ensure 'conda activate' works within the script
     source "$(conda info --base)/etc/profile.d/conda.sh" || exit 1
-    conda activate phia || exit 1
+    conda activate pha_framework || exit 1
     
     # Verify pip and python info for debugging
     echo "Using pip from: $(which pip)"
     echo "Python version: $(python --version)"
     
-    # Install other packages from requirements.txt first
+    # Install standard packages from requirements.txt
+    echo "Installing dependencies from requirements.txt..."
     python -m pip install -r requirements.txt || exit 1
     
-    # Need --no-deps flag to make installation across different machine architectures easier
+    # Install OneTwo from the official Google DeepMind repo
+    # Using --no-deps to prevent it from overwriting our specific versions of shared libs (like numpy)
+    echo "Installing OneTwo..."
     python -m pip install --no-deps git+https://github.com/google-deepmind/onetwo || exit 1
     
-    # Register the kernel with Jupyter (now that ipykernel is installed)
-    python -m ipykernel install --user --name phia --display-name "phia (Python 3.11.x)" || exit 1
+    # Register the kernel with Jupyter
+    echo "Registering Jupyter kernel..."
+    python -m ipykernel install --user --name pha_framework --display-name "pha_framework (Python 3.12)" || exit 1
     
-    echo "Setup complete! Environment 'phia' is ready to use!"
+    echo "----------------------------------------------------------------"
+    echo "Setup complete! Environment 'pha_framework' is ready."
+    echo "To start using it, run: conda activate pha_framework"
+    echo "----------------------------------------------------------------"
 }
 
 conda_setup

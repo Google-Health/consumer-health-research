@@ -1,8 +1,12 @@
-# Directory where Python 3 stores .pyc files
 __pycache__/
+frontend/node_modules/
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+*.egg
+dist/
+build/
+.vscode/
 
-# Individual bytecode files (if outside __pycache__/)
-*.py[cod]
-
-# Jython bytecode files
-*$py.class
+# User study defaults (contains API keys - do not commit)
+config/user_study_defaults.json
