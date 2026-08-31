@@ -6,7 +6,7 @@ This provides REST endpoints for:
 - Health data access
 
 Run with:
-    cd personal-health-agent-main
+    cd personal_health_agent
     uvicorn api.main:app --reload --port 8000
 """
 
