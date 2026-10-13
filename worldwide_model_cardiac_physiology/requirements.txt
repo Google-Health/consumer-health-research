@@ -1,0 +1,20 @@
+# Core Scientific and Data Libraries
+numpy>=1.26
+pandas>=2.1
+pyarrow>=14.0
+scipy>=1.11
+statsmodels>=0.14,<0.16
+patsy>=0.5.3
+scikit-learn>=1.3
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+plotly>=5.18
+
+# Spatial & Geospatial
+geopandas>=0.14
+
+# Notebook Environment
+jupyter>=1.0.0
+ipython>=8.0.0
