@@ -12,6 +12,7 @@ Usage:
     response = agent.call_agent("What does my HbA1c of 5.8% mean?")
 """
 
+import functools
 import json
 import os
 import textwrap
@@ -562,6 +563,8 @@ if _ONETWO_AVAILABLE:
             # Create the ReAct agent
             domain_expert_agent = react.ReActAgent(
                 prompt=self.get_jinja_preamble_from_string(),
+                # Final health explanations may contain multiple paragraphs.
+                parse=functools.partial(react.react_parse, final_stop_sequence=None),
                 exemplars=health_exemplars,
                 environment_config=python_tool_use.PythonToolUseEnvironmentConfig(
                     tools=self.get_llm_toolbox(),
