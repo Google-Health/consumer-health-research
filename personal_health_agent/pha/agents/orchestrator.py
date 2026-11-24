@@ -896,6 +896,7 @@ class MultiAgentOrchestrator:
         self.reflection_round_counter = 0
         self.flag_reflection_mode = False
         self.rephrase_prompt_record = {}
+        supporting_insights = ""
         
         # === Parallel memory + overlapped team structure ===
         # Topic, goal, finish_desc are independent LLM calls.
@@ -999,12 +1000,17 @@ class MultiAgentOrchestrator:
                 self._merge_and_store_agent_insights(self.main_agent, main_response)
 
 
-        main_response_new = self._call_llm(
+        final_response_prompt = (
             ORCHESTRATOR_FINAL_RESPONSE_IMPROVEMENT_PROMPT +
             "\n[CONVERSATION]\n" + self.get_conversation_history() +
             "\n\nRespond to the user's question: " + self.question_last +
             "\n[FINAL_RESPONSE]\n" + main_response
         )
+        if supporting_insights:
+            final_response_prompt += (
+                "\n[SUPPORTING_AGENT_INSIGHTS]\n" + supporting_insights
+            )
+        main_response_new = self._call_llm(final_response_prompt)
         ts = datetime.now().strftime("%H:%M:%S")
         print(f"\n{'═' * 60}")
         print(f"[Orch:{ts}] updating main response from '{main_response}'")

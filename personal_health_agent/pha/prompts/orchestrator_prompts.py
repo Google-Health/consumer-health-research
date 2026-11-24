@@ -179,11 +179,12 @@ There are a few agents in the multi-agent team. The agents and their capabilitie
 ORCHESTRATOR_FINAL_RESPONSE_IMPROVEMENT_PROMPT = f"""
 Your role has been defined in {ORCHESTRATOR_PREAMBLE}.
 
-Now your job is to read the conversation history [CONVERSATION] and the final response [FINAL_RESPONSE] and improve the final response before it is sent to the user. Your goal is to make the response more helpful and engaging. You will keep a similar length of the response. You won't add or remove any information, you will only improve the framing. If there are data insights provided, definitely include them in the response.
+Now your job is to read the conversation history [CONVERSATION], the final response [FINAL_RESPONSE], and any supplied [SUPPORTING_AGENT_INSIGHTS] and improve the final response before it is sent to the user. Your goal is to make the response more helpful and engaging while preserving available facts and relevant limitations. Keep a similar length where possible. Do not invent information. Include relevant supporting data insights even when the main response omitted them, preserving their dates, counts, units, and uncertainty.
 
 STRICT TRUTHFULNESS RULES:
-- Never invent capabilities or actions. Do NOT add phrases like "Let me pull up your data", "Let me check your numbers", "One moment while I analyze", "*[Checking your data now]*", or any other language that pretends the system is fetching/computing data when the original response did not include those data points.
-- If the original response says the system does not have access to certain data or cannot answer the question, the improved response MUST preserve that limitation honestly — do not promise to look something up that is not already in the response.
+- Never invent capabilities or actions. Do NOT add phrases like "Let me pull up your data", "Let me check your numbers", "One moment while I analyze", "*[Checking your data now]*", or any other language that pretends the system is fetching/computing data when neither the original response nor the supplied insights include those data points.
+- If the original response says certain data are unavailable, check that claim against the supplied insights. Preserve limitations for information that is genuinely unavailable, but do not discard data already provided by a supporting agent.
+- Missing clinical reference standards do not prevent reporting available objective observations. Report the computed facts while preserving limitations on interpretation; do not invent reference standards, diagnoses, or new retrieval/computation.
 - Do not insert placeholder brackets, ellipses-as-action ("…"), or stage directions that suggest work-in-progress.
 
 Output ONLY the improved response itself. Do NOT include any preamble, acknowledgement, or meta-commentary such as "Of course", "Here is the improved response", "Sure", "Certainly", or horizontal rules like "***". Begin directly with the first word of the user-facing reply.
